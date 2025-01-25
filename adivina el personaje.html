@@ -2,22 +2,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ruleta</title>
-    <link rel="stylesheet" href="css/juegos.css">
-       <script src="js/ruleta.js" defer></script> 
-       <script src="js/helpers.js"></script>
+    <title>adivina el personaje</title>
+    <link rel="stylesheet" href="/css/juegos.css">
+    <script src="/js/akinator.js" defer></script> 
     <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="assets/bootstrap-5.3.3-dist/bootstrap-icons-1.11.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.css">
-
-
-
+</head>
 </head>
 <body>
+
     <header>
-        <nav class="fs-3 navbar navbar-expand-lg bg-body-tertiary navbar bg-dark border-bottom border-body mb-5" data-bs-theme="dark">
-            <div class="container-fluid">
+        <nav class="fs-3 navbar navbar-expand-lg bg-body-tertiary navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+            <div class="container-fluid ps-5">
               <a class="navbar-brand fs-2" href="https://www.instagram.com/mamesinsulunga?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">MSL</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -27,59 +24,47 @@
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                   </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Actividades
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Tiendas</a></li>
-                      <li><a class="dropdown-item" href="#">Juegos</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Exposicion de Arte</a></li>
-                    </ul>
-                  </li>
                   <li class="nav-item">
                     <a class="nav-link disabled" aria-disabled="true">Unete</a>
                   </li>
-                    
                 </ul>
               </div>
             </div>
-        </nav>
-    </header>
+          </nav>
+      </header>
 
+      <section class="m-5">
+            <h1>ADIVINA LA CELEBRIDAD</h1>
+            <p></p>
+      </section>
+            
+      <section class="categorias col-3 mx-auto mt-5">
 
-<section class="mb-5 pb-5"><h1>Prueba tu suerte!</h1>
-</section>    
+            <button id="cantantes" type="button" class="btn btn-outline-success m-2" >Cantantes</button>
+            <button id="actores" type="button" class="btn btn-outline-success m-2" >Actores y Actrices</button>
+            <button id="ficticios" type="button" class="btn btn-outline-success m-2" >Personajes ficticios</button>
+            
 
+            
+      </section>
 
-    
-    <div id="container">
-        <div id="marcador">
-          <div id="cartelGanador">
-            <p id="resultadoTexto">Clic en girar para iniciar!</p>
-          </div>
-        </div>
-        <div id="ruleta">
-            <button id="sortear">
-              GIRAR
-            </button>
-        </div>
-    </div>
+      <section class="mt-5 mx-auto col-3 descripcion border border-success rounded-4">
+        <p class="mt-3">DESCRIPCION DEL PERSONAJE</p>
+        <p id="descripcion"></p>
+        
+      </section>
+      <section class="mx-auto col-3 descripcion mt-5">
+        <p>IMPORTANTE: Debes colocar el primero el nombre y despues el apellido / característica tal cual se escribe, respetando las mayúsculas del nombre propio. Ej: Finn El Humano, Finneas O'Connell, Kayleen McAdams, y asi </p>
+            <form action="#" method="post" id="resp" onsubmit="return false">
+              <input type="text" id="respuesta" class="form-control">
+              <span id="error_respuesta"></span>
+              <input type="submit" value="Enviar" id="submit" class="btn btn-outline-success col-auto mt-3">
+            </form>
+              <p id="resultado" class="p-3 border border-success rounded-4 "></p>
+      </section>
 
-   
+      <a class="col-1 mx-auto mt-5 mb-5 btn btn-outline-success d-grid gap-2 " href="juego.html" role="button">Salir</a>
 
-    <form action="#" method="post" name="apuesta" id="apuesta" onsubmit="return false" class="col-1 mx-auto">
-      <label for="cantidad" class="form-label">Ingrese la cantidad a apostar</label>
-      <input type="text" id="cantidad" class="form-control">
-      <span id="error_cantidad"></span>
-      <input type="submit" value="Enviar" id="submit" class="btn btn-outline-danger col-auto mt-3">
-    </form>
-    <section>
-      <p id="resultado">Tu premio es de:</p>
-    </section>
-
-     <a class="btn btn-outline-success d-grid gap-2 col-1 mx-auto mt-5 mb-5" href="juego.html" role="button">Salir</a>
 
     <footer>
         <section>
@@ -116,9 +101,13 @@
                 <li><a href="https://wa.me/qr/IBFG45EXNOE4I1">Numero de contacto</a></li>
             </ul>
         </section>
-    </footer>
-      
+        </footer>
+
     
-    <script src="assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script> 
-    </body>
-    </html>
+    
+
+    
+</body>
+<script type="text/javascript" src="/js/akinator.js"></script>
+    <script type="text/javascript" src="assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script> 
+</html>

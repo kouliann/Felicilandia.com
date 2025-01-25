@@ -138,10 +138,12 @@ function calificarpinturas() {
        }
        votospintu[voto]= (votosdibu[voto]+estrellas)/5;
        alert(`¡Gracias por tu voto!, el autor lo agradecera muchisimo <3`);
-       
-
 
     }
 }
 
 
+var form = document.querySelector("#formulario");
+form.addEventListener('submit', function(event){
+    event.preventDefault(); //Evita el envio del formulario por defecto
+})

@@ -1,21 +1,31 @@
 /*Inicio de los Juegos*/
-
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+        font-optical-sizing: auto;
+        font-style: normal;
+    }
     body{
         margin: 0%;
         padding: 0%;
         line-height: 1.2;
-        
     }
+
+    
 
     :root{
         --primary-color: #243642;
         --secundary-color: #387478;
         --pink:#629584;
-        --peach: #E2F1E7;
+        --peach: #efece7;
         --white:#ffffff;
         --black:black;
         --grey:gray;
+
+        --ancho:200px;
+        --largo:200px;
     }
+    
 
     a{
         text-decoration: none;
@@ -38,10 +48,11 @@
         align-content: center;
         grid-template-columns: auto auto auto auto;
         gap: 10px;  
-        padding: 10px;
-        padding-top: 50px;
-        margin-top: 80px;
+        padding: 2%;
+        padding-top: 5%;
         background-color: var(--primary-color);
+        width: 100%;
+        height: auto;
     }
 
     footer li{
@@ -74,31 +85,45 @@
         height: auto;
         font-size: 30px;
         border: 2px var(--primary-color);
-        background-color: var(--peach);
+        background-image: url(/images/hjkg.jpg);
 
     }
 
+    .comienzo h1{
+        text-shadow: #000 1px 0 8px;
+        color: #ffffff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+        font-size: 70px;
+    }
+    
+    .comienzo p{
+      text-shadow: #000 1px 0 8px;
+      color: #ffffff;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bolder;
+      font-size: 30px;
+    }
+
     .menujuegos{
-        margin-top: 90px;
-        margin-left: 100px;
-        padding: 40px;
+        margin: 5%;
+        padding: 5%;
         size: 20px;
-        text-align: center;
         border-radius: 4px;
         grid-template-columns: auto auto auto;
         text-decoration: none;
     }
 
     .Juegos{
+        margin: auto;
         display: grid;
         align-content: center;
         grid-template-columns: auto auto auto auto auto ;
         gap: 30px;
         padding: 10px;
-        margin-top: 40px;
         text-decoration: none;
-        margin-left: 40px;
-        margin-right: 40px;
+        width: 100%;
+        height: auto;
 
     
     }
@@ -108,8 +133,8 @@
         text-align: center;
         padding: 30px;
         border-radius: 10px;
-        height: 200px;
-        width: 200px;
+        width: var(--ancho);
+        height: var(--largo);
         background-image: url(/images/Fondo\ de\ la\ rueda\ de\ la\ fortuna\ Ilustración\ de\ la\ ruleta\ de\ la\ suerte\ del\ vector\ Concepto\ de\ casino\ en\ línea\ _\ Vector\ Premium.jpeg);
 
     }
@@ -119,8 +144,8 @@
         text-align: center;
         padding: 30px;
         border-radius: 10px;
-        height: 200px;
-        width: 200px;
+        width: var(--ancho);
+        height: var(--largo);
         background-image: url(/images/aros.png);
     }
 
@@ -129,8 +154,8 @@
         text-align: center;
         padding: 30px;
         border-radius: 10px;
-        height: 200px;
-        width: 200px;
+        width: var(--ancho);
+        height: var(--largo);
         background-image: url(/images/vector-globo-explotado-aislado-fondo-blanco-arte-clip-globo-explosivo-vector-plano-dibujos-animados_893800-756.avif);
     }
 
@@ -139,8 +164,8 @@
         text-align: center;
         padding: 30px;
         border-radius: 10px;
-        height: 200px;
-        width: 200px;
+        width: var(--ancho);
+        height: var(--largo);
         background-image: url(/images/Anotación\ 2025-01-07\ 192056.png);
     }
 
@@ -149,8 +174,8 @@
         text-align: center;
         padding: 30px;
         border-radius: 10px;
-        height: 200px;
-        width: 200px;
+        width: var(--ancho);
+        height: var(--largo);
         background-image: url(/images/quien_es_ese_pokemon__who_s_that_poke___by_shikomt_by_shikomt_dbf1jrd-fullview.jpg);
     }
 
@@ -159,8 +184,8 @@
         text-align: center;
         padding: 30px;
         border-radius: 10px;
-        height: 200px;
-        width: 200px;
+        width: var(--ancho);
+        height: var(--largo);
         background-image: url(/images/Anotación\ 2025-01-07\ 215355.png);
     }
 
@@ -170,8 +195,8 @@
         padding: 30px;
         border-radius: 10px;
 
-        height: 200px;
-        width: 200px;
+        width: var(--ancho);
+        height: var(--largo);
         background-image: url(/images/three-dices-isolated-on-white-background-illustration-vector.jpg);
     }
 
@@ -181,8 +206,8 @@
         padding: 30px;
         border-radius: 10px;
         text-decoration: none;
-        height: 200px;
-        width: 200px;
+        width: var(--ancho);
+        height: var(--largo);
         background-image: url(/images/maxresdefault.jpg);
     }
 
@@ -192,8 +217,8 @@
         padding: 30px;
         border-radius: 10px;
         text-decoration: none;
-        height: 200px;
-        width: 200px;
+        width: var(--ancho);
+        height: var(--largo);
         background-image: url(/images/numeros.png);
     }
 
@@ -203,8 +228,8 @@
         padding: 30px;
         border-radius: 10px;
         text-decoration: none;
-        height: 200px;
-        width: 200px;
+        width: var(--ancho);
+        height: var(--largo);
         background-image: url(/images/tragaperras.jpg);
     }
 
@@ -214,8 +239,8 @@
         padding: 30px;
         border-radius: 10px;
         text-decoration: none;
-        height: 200px;
-        width: 200px;
+        width: var(--ancho);
+        height: var(--largo);
         background-image: url(/images/tricky-cups-memory-game.png);
     }
 
@@ -225,8 +250,8 @@
         padding: 30px;
         border-radius: 10px;
         text-decoration: none;
-        height: 200px;
-        width: 200px;
+        width: var(--ancho);
+        height: var(--largo);
         background-image: url(/images/143838920-frasco-de-vidrio-con-bolas-de-caramelos-dulce-confitería-icono-aislado.jpg);
     }
 
@@ -236,8 +261,8 @@
         padding: 30px;
         border-radius: 10px;
         text-decoration: none;
-        height: 200px;
-        width: 200px;
+        width: var(--ancho);
+        height: var(--largo);
         background-image: url(/images/Fortune_Teller.png);
     }
 
@@ -247,8 +272,8 @@
         padding: 30px;
         border-radius: 10px;
         text-decoration: none;
-        height: 200px;
-        width: 200px;
+        width: var(--ancho);
+        height: var(--largo);
         background-image: url(/images/dardos.png);
     }
     .item15{
@@ -257,94 +282,215 @@
         padding: 30px;
         border-radius: 10px;
         text-decoration: none;
-        height: 200px;
-        width: 200px;
+        height:var(--largo);
+        width: var(--ancho);
         background-image: url(/images/cartas.jpg);
-    }
-
-    .center{
-        text-align: center;
-        object-position: center;
-        color: #243642;
     }
 
     .names{
         display: grid;
         align-content: center;
+        margin: auto;
         grid-template-columns: auto auto auto auto auto ;
         gap: 30px;
         padding: 10px;
-        margin-top: 5px;
-        margin-left: 40px;
-        margin-right: 40px;
+        text-decoration: none;
+        width: 100%;
+        height: auto;
     }
 
     .mjugo{
         text-align: center;
         padding: 30px;
         text-decoration: none;
-        height: 100px;
-        width: 200px
+        height:auto;
+        width: var(--ancho);
+  
     }
+
 
 /*Fin pagina principal*/
 
-:root{
-    --escala: 300px
-}
+/*Ruleta*/
+    :root{
+        --escala: 400px;
+        --giroRuleta: 0deg;
 
-.ruleta{
-    margin: auto;
+    }
+
+    h1{
+        text-align: center;
+    user-select: none;
+    }
+
+    #container{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    #ruleta{
+        position: relative;
+        box-sizing:content-box;
+        height: var(--escala);
+        width: var(--escala); 
+        border: 5px solid rgb(0, 0, 0);
+        border-radius: 50%;
+        overflow:hidden;
+        
+
+    }
+
+
+    #cartelGanador{
+        position: absolute;
+        left: -150px;
+        top: -40px;
+        background-color: rgb(228, 221, 221);
+        min-height: 55px;
+        width: 300px;
+        font-weight: bold;
+        border-radius: 10px;
+        text-align: center;
+        padding: 6px;
+
+    }
+    #marcador{
+        position: absolute;
+        z-index: 10;
+        top: -20px;
+        background-color:rgb(228, 221, 221);
+        height: 100px;
+        width: 5px;
+        pointer-events: none;
+        border-radius: 7px;
+    }
+
     
-
-    
-}
-#sortear{
-    position: absolute;
-	background-color: var(--peach);
-	border-radius: 50%;
-	width: 60px;
-	height: 60px;
-	top: calc(var(--escala) / 2 - 60px / 2 );
-	left: calc(var(--escala) / 2 - 60px / 2 );
-	z-index: 2;
-	text-align: center;
-	cursor: pointer;
-	user-select: none;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border: 1px solid black;
-}
+    #sortear{
+        position: absolute;
+        background-color: var(--peach);
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        top: calc(var(--escala) / 2 - 60px / 2 );
+        left: calc(var(--escala) / 2 - 60px / 2 );
+        z-index: 2;
+        text-align: center;
+        cursor: pointer;
+        user-select: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+    }
 
 
-.separador{
-    position: absolute;
-	left: calc(var(--escala) / 2 - 2px);
-	height: calc(var(--escala) / 2);;
-	width: 3px;
-	transform-origin: center bottom;
-	background-color: rgb(0, 0, 0);
-	z-index: 1;
-	border-radius: 2px;
-}
+    .separador{
+        position: absolute;
+        left: calc(var(--escala) / 2 - 2px);
+        height: calc(var(--escala) / 2);;
+        width: 3px;
+        transform-origin: center bottom;
+        background-color: rgb(0, 0, 0);
+        z-index: 1;
+        border-radius: 2px;
+    }
+
+    .opcion{
+        position: absolute;
+        width:var(--escala );
+        height: var(--escala);
+    }
+
+    #apuesta{
+        text-align: center;
+        margin: 40px;
+        z-index: 1;
+
+    }
+
+    #resultado{
+        text-align: center;
+        margin: 40px;
+        z-index: 1;
+    }
+
+    .girar{
+        animation-name: girar;
+        animation-duration: 10s;
+        animation-fill-mode: forwards;
+        animation-timing-function: cubic-bezier(0.1, 0, 0.18, 0.99);
+
+    }
+
+    @keyframes girar {
+        100%{
+            transform: rotate(var(--giroRuleta));
+        }
+    }
+/*Fin de la Ruleta*/
+
+    .categorias{
+        display: grid;
+        grid-template-columns: auto;
+        margin-top: 30px;
+    }
 
 
+    .descripcion{
+        text-align: center;
+        height: auto;
+        width: 100%;
+        
+    }
+    #descripcion{
+        margin-top: 40px;
+        padding: 50px;
+        text-align: center;
+        height: auto;
+        width: 100%;
+        font-size: 20px;
+    }
 
-#ruleta{
-    position: relative;
-    width:var(--escala );
-    height: var(--escala);
-    border: 3px solid rgb(0, 0, 0);
-    border-radius: 50%;
-    overflow: hidden;
-    
-}
+    #resultado{
+        text-align: center;
+        font-size: 20px;
+    }
 
-.opcion{
-    position: absolute;
-    width:var(--escala );
-    height: var(--escala);
+    /*Fin  de Adivina el personaje*/
 
-}
+    .cuelpo{
+        background-image: url(/images/bg\ wood.jpg);
+        
+    }
+    #menus{
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 100%;
+        height: auto;
+        padding-left: 10%;
+        padding-right: 10%;
+        
+    }
 
+    .mnu1, .mnu2{
+        display: grid;
+        grid-template-columns: auto;
+        padding: auto;
+        margin-top: 10%;
+        width: 60%;
+        height: auto;
+        font-size: 20px;
+        border: 10px solid rgb(94, 40, 21);
+        background: rgb(255,195,126);
+background: linear-gradient(0deg, rgba(255,195,126,1) 0%, rgba(255,216,148,1) 30%, rgba(255,216,148,1) 70%, rgba(255,195,126,1) 100%);
+        border-radius: 5px;
+    }
+    p{
+        text-align: center;
+        
+    }
