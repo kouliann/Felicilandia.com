@@ -32,36 +32,39 @@
       </nav>
   </header>
   <!--fin Header-->
-      <section class="comienzo">
+  
+      <section class="comienzo mb-5">
         <h1 class="animate__animated animate__fadeIn">Tiendas disponibles</h1>
       </section>
-        <h1 class="text-center mt-5">LISTA DE TIENDAS EXISTENTES</h1>
-        <section class="menuTiendas" > 
+      <section class="text-center mt-5 border border-success-subtle rounded mx-auto p-5 pt-auto fs-3">
+        <p>LISTA DE TIENDAS EXISTENTES</p>
+      </section>     
+        <section class="menuTiendas " > 
+        
+           <ul id="ids" class="border border-success-subtle rounded-start"></ul>
            
-           <ul id="ids" class="border border-success-subtle"></ul>
-           
-           <ul id="tiendas" class="border border-success-subtle"></ul>
+           <ul id="tiendas" class="border border-success-subtle rounded-end"></ul>
            
         </section>
         <section>
-            <form action="#" method="post" name="ver" id="ver" onsubmit="return false" class="col-1 mx-auto">
+            <form action="#" method="post" name="ver" id="ver" onsubmit="return false" class="col-4 mx-auto ">
                 <label for="idT">Ingrese la id de la tienda que quiere mirar</label>
-                <input type="number" id="idT" class="form-control">
+                <input type="text" id="idT" class="form-control ">
                 <span id="error_idT"></span>
-                <input type="submit" value="Enviar" id="submit" class="btn btn-outline-success col-auto mt-3">
+                <input type="submit" value="Enviar" id="submit" class="btn btn-outline-success col-3 mt-3">
             </form>
             
         </section>
 
         <div >
-            <div class="border border-success-subtle Htienda"> 
+            <div class="border border-success-subtle rounded-top Htienda"> 
                 <p id="titulo" class="text-center"></p> 
                 <p id="descripcion" class="text-center" ></p>
             </div>
             <div class="tienda">       
-                <ul id="productos" class="border border-success-subtle"></ul>
-                <ul id="precio" class="border border-success-subtle"></ul>
-                <ul id="stock" class="border border-success-subtle"></ul>
+                <ul id="productos" class="border border-success-subtle rounded-bottom"></ul>
+                <ul id="precio" class="border border-success-subtle rounded-bottom"></ul>
+                <ul id="stock" class="border border-success-subtle rounded-bottom"></ul>
             </div>  
         </div>
   

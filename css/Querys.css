@@ -1,0 +1,897 @@
+@media only screen and (max-width: 1024px) {
+/*pagina princpal*/
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+  }
+
+body{
+    margin: 0%;
+    padding: 0%;
+    line-height: 1.2;
+    font-family: "IM Fell DW Pica", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root{
+    --primary-color: #243642;
+    --secundary-color: #387478;
+    --pink:#629584;
+    --peach: #E2F1E7;
+    --white:#ffffff;
+    --black:black;
+    --grey:gray;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--peach);
+
+}
+
+footer a:hover {
+    color: var(--secundary-color);
+  
+}
+
+.comienzo h1{
+    text-shadow: #000 1px 0 8px;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 50px;
+    text-align: center;
+}
+
+.servicios{
+    display: grid;
+    align-content: center;
+    grid-template-columns: auto auto auto ;
+    gap: 50px;
+    background-color: var(--white);
+    padding: 30px;
+    margin-top: 100px;
+    text-decoration: none;
+   
+}
+
+.item1{
+    
+    border:1px  solid var(--secundary-color);
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    color: var(--primary-color);
+    text-decoration: none;
+    height: 350px;
+    justify-content: center;
+    background-image: url(/images/juegos\(1\).png);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.item2{
+    border:1px  solid var(--secundary-color);
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    color: var(--primary-color);
+    text-decoration: none;
+    height: 350px;
+    justify-content: center;
+    background-image: url(/images/Tiendas.png);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.item3{
+    border:1px  solid var(--secundary-color);
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    color: var(--primary-color);
+    text-decoration: none;
+    height: 350px;
+    justify-content: center;
+    background-image: url(/images/exposicion\(2\).png);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.item1:hover{
+    
+    background-blend-mode: multiply;
+    background-size: 620px;
+}
+
+.item2:hover{
+    background-blend-mode: multiply;
+    background-size: 620px;
+}
+
+.item3:hover{
+    background-blend-mode: multiply;
+    background-size: 620px;
+
+}
+
+.listas{
+    list-style: none;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.icon{
+    color: var(--secundary-color);
+    font-size: 3em;
+    text-align: center;
+    padding-left: auto;
+}
+
+footer{
+    display: grid; 
+    align-content: center;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;  
+    padding: 10px;
+    padding-top: 50px;
+    margin-top: 80px;
+    background-color: var(--primary-color);
+}
+
+footer li{
+    display: flex;
+    padding: 10px;
+}
+
+/*Fin pagina princpal*/
+
+/*Seccion de los juegos*/
+
+/*Inicio de los Juegos*/
+
+.comienzo h1{
+    text-shadow: #000 1px 0 8px;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 70px;
+}
+
+.comienzo p{
+  text-shadow: #000 1px 0 8px;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+.menujuegos{
+
+    padding: 10%;
+    width: 100%;
+    height: auto;
+    grid-template-columns: auto;
+    text-decoration: none;
+    
+}
+
+.Juegos{
+    margin: auto;
+    display: grid;
+    align-content: center;
+    grid-template-columns: auto auto auto ;
+    gap: 30px;
+    padding: 10px;
+    text-decoration: none;
+    width: 100%;
+    height: auto;
+
+
+}
+
+.names{
+    justify-content: center;
+    display: grid;
+    margin: auto;
+    grid-template-columns: auto;
+    gap: 30px;
+    text-decoration: none;
+    width: 100%;
+    height: auto;
+}
+
+.mjugo{
+    text-align: center;
+    padding: 30px;
+    text-decoration: none;
+    height:auto;
+    width: var(--ancho);
+
+}
+
+
+/*Fin pagina principal*/
+
+/*Ruleta*/
+:root{
+    --escala: 400px;
+    --giroRuleta: 0deg;
+
+}
+
+h1{
+    text-align: center;
+user-select: none;
+}
+
+#container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#ruleta{
+    position: relative;
+    box-sizing:content-box;
+    height: var(--escala);
+    width: var(--escala); 
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    overflow:hidden;
+    
+
+}
+
+
+#cartelGanador{
+    position: absolute;
+    left: -150px;
+    top: -40px;
+    background-color: rgb(228, 221, 221);
+    min-height: 55px;
+    width: 300px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-align: center;
+    padding: 6px;
+
+}
+#marcador{
+    position: absolute;
+    z-index: 10;
+    top: -20px;
+    background-color:rgb(228, 221, 221);
+    height: 100px;
+    width: 5px;
+    pointer-events: none;
+    border-radius: 7px;
+}
+
+
+#sortear{
+    position: absolute;
+    background-color: var(--peach);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    top: calc(var(--escala) / 2 - 60px / 2 );
+    left: calc(var(--escala) / 2 - 60px / 2 );
+    z-index: 2;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+
+.separador{
+    position: absolute;
+    left: calc(var(--escala) / 2 - 2px);
+    height: calc(var(--escala) / 2);;
+    width: 3px;
+    transform-origin: center bottom;
+    background-color: rgb(0, 0, 0);
+    z-index: 1;
+    border-radius: 2px;
+}
+
+.opcion{
+    position: absolute;
+    width:var(--escala );
+    height: var(--escala);
+}
+
+#apuesta{
+    text-align: center;
+    margin: 40px;
+    z-index: 1;
+
+}
+
+#resultado{
+    text-align: center;
+    margin: 40px;
+    z-index: 1;
+}
+
+.girar{
+    animation-name: girar;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.1, 0, 0.18, 0.99);
+
+}
+
+@keyframes girar {
+    100%{
+        transform: rotate(var(--giroRuleta));
+    }
+}
+/*Fin de la Ruleta*/
+
+.bgAdivina{
+    background: rgb(173,255,225);
+    background: radial-gradient(circle, rgba(173,255,225,1) 0%, rgba(113,172,230,1) 100%);
+}
+
+.categorias{
+    display: grid;
+    grid-template-columns: auto;
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+}
+
+
+.descripcion{
+    text-align: center;
+    height: auto;
+    width: 100%;
+    
+}
+#descripcion{
+    margin-top: 40px;
+    padding: 50px;
+    text-align: center;
+    height: auto;
+    width: 100%;
+    font-size: 20px;
+}
+
+#resultado{
+    text-align: center;
+    font-size: 20px;
+}
+
+/*Fin  de Adivina el personaje*/
+
+.cuelpo{
+    background-image: url(/images/bg\ wood.jpg);
+    
+}
+#menus{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    height: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+}
+
+.mnu1, .mnu2{
+    display: grid;
+    grid-template-columns: auto;
+    padding: auto;
+    margin-top: 10%;
+    width: 60%;
+    height: auto;
+    font-size: 20px;
+    border: 10px solid rgb(94, 40, 21);
+    background: rgb(255,195,126);
+    background: linear-gradient(0deg, rgba(255,195,126,1) 0%, rgba(255,216,148,1) 30%, rgba(255,216,148,1) 70%, rgba(255,195,126,1) 100%);
+    border-radius: 5px;
+}
+p{
+    text-align: center;
+    
+}   
+
+/*Fin de la seccion de los juegos*/
+}
+
+@media only screen and (max-width: 768px) {
+
+    .servicios{
+        display: grid;
+        align-content: center;
+        grid-template-columns: auto auto auto ;
+        gap: 50px;
+        background-color: var(--white);
+        padding: 30px;
+        margin-top: 70px;
+        text-decoration: none;
+       
+    }
+    
+    .item1{
+        
+        border:1px  solid var(--secundary-color);
+        text-align: center;
+        padding: 20px;
+        border-radius: 10px;
+        color: var(--primary-color);
+        text-decoration: none;
+        height: 250px;
+        justify-content: center;
+        background-image: url(/images/juegos\(1\).png);
+        background-size: cover;
+        background-position: center;
+    
+    }
+    
+    .item2{
+        border:1px  solid var(--secundary-color);
+        text-align: center;
+        padding: 30px;
+        border-radius: 10px;
+        color: var(--primary-color);
+        text-decoration: none;
+        height: 250px;
+        justify-content: center;
+        background-image: url(/images/Tiendas.png);
+        background-size: cover;
+        background-position: center;
+    
+    }
+    
+    .item3{
+        border:1px  solid var(--secundary-color);
+        text-align: center;
+        padding: 30px;
+        border-radius: 10px;
+        color: var(--primary-color);
+        text-decoration: none;
+        height: 250px;
+        justify-content: center;
+        background-image: url(/images/exposicion\(2\).png);
+        background-size: cover;
+        background-position: center;
+    
+    }
+    
+
+    .menujuegos{
+
+        width: 100%;
+        height: auto;
+        grid-template-columns: auto;
+        text-decoration: none;
+        
+    }
+    
+    .Juegos{
+        margin: auto;
+        display: grid;
+        align-content: center;
+        grid-template-columns: auto auto auto;
+        text-decoration: none;
+        width: 100%;
+        height: auto;
+    }
+
+    .names{
+        justify-content: center;
+        display: grid;
+        align-content: center;
+        margin: auto;
+        grid-template-columns: auto;
+        gap: 30px;
+        text-decoration: none;
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+@media only screen and (max-width: 425px) {
+/*pagina princpal*/
+
+.comienzo h1{
+    text-shadow: #000 1px 0 8px;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+.servicios{
+    display: grid;
+    align-content: center;
+    grid-template-columns: auto ;
+    gap: 50px;
+    background-color: var(--white);
+    padding: 20px;
+    margin-top: 100px;
+    text-decoration: none;
+   
+}
+
+.item1{
+    
+    border:1px  solid var(--secundary-color);
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    color: var(--primary-color);
+    text-decoration: none;
+    height: 250px;
+    justify-content: center;
+    background-image: url(/images/juegos\(1\).png);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.item2{
+    border:1px  solid var(--secundary-color);
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    color: var(--primary-color);
+    text-decoration: none;
+    height: 250px;
+    justify-content: center;
+    background-image: url(/images/Tiendas.png);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.item3{
+    border:1px  solid var(--secundary-color);
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    color: var(--primary-color);
+    text-decoration: none;
+    height: 250px;
+    justify-content: center;
+    background-image: url(/images/exposicion\(2\).png);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.item1:hover{
+    
+    background-blend-mode: multiply;
+    background-size: 310px;
+}
+
+.item2:hover{
+    background-blend-mode: multiply;
+    background-size: 310px;
+}
+
+.item3:hover{
+    background-blend-mode: multiply;
+    background-size: 310px;
+
+}
+
+.listas{
+    list-style: none;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.icon{
+    color: var(--secundary-color);
+    font-size: 2em;
+    text-align: center;
+    padding-left: auto;
+}
+
+footer{
+    
+    display: grid; 
+    align-content: center;
+    grid-template-columns: auto ;
+    gap: 5px;  
+    padding: 5px;
+    padding-top: 25px;
+    margin-top: 40px;
+    width: 100%;
+    background-color: var(--primary-color);
+}
+
+footer li{
+    display: flex;
+    padding: 7px;
+}
+
+/*Fin pagina princpal*/  
+
+/*Seccion de los juegos*/
+
+/*Inicio de los Juegos*/
+
+
+.comienzo{
+    display: grid;
+    align-content: center;
+    gap: 10px;
+    padding: 5%;
+    width: 100%;
+    height: auto;
+    background-image: url(/images/hjkg.jpg);
+
+}
+
+.menujuegos{
+
+    width: 100%;
+    height: auto;
+    grid-template-columns: auto auto auto;
+    text-decoration: none;
+    
+}
+
+.Juegos{
+    margin: auto;
+    display: grid;
+    align-content: center;
+    grid-template-columns: auto ;
+    text-decoration: none;
+    width: 100%;
+    height: auto;
+}
+
+.names{
+    justify-content: center;
+    display: grid;
+    align-content: center;
+    margin: auto;
+    grid-template-columns: auto;
+    gap: 30px;
+    text-decoration: none;
+    width: 100%;
+    height: auto;
+}
+
+
+.mjugo{
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    height:auto;
+    width: var(--ancho);
+
+}
+
+
+/*Fin pagina principal*/
+
+/*Ruleta*/
+:root{
+    --escala: 400px;
+    --giroRuleta: 0deg;
+
+}
+
+h1{
+    text-align: center;
+user-select: none;
+}
+
+#container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#ruleta{
+    position: relative;
+    box-sizing:content-box;
+    height: var(--escala);
+    width: var(--escala); 
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    overflow:hidden;
+    
+
+}
+
+
+#cartelGanador{
+    position: absolute;
+    left: -150px;
+    top: -40px;
+    background-color: rgb(228, 221, 221);
+    min-height: 55px;
+    width: 300px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-align: center;
+    padding: 6px;
+
+}
+#marcador{
+    position: absolute;
+    z-index: 10;
+    top: -20px;
+    background-color:rgb(228, 221, 221);
+    height: 100px;
+    width: 5px;
+    pointer-events: none;
+    border-radius: 7px;
+}
+
+
+#sortear{
+    position: absolute;
+    background-color: var(--peach);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    top: calc(var(--escala) / 2 - 60px / 2 );
+    left: calc(var(--escala) / 2 - 60px / 2 );
+    z-index: 2;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+
+.separador{
+    position: absolute;
+    left: calc(var(--escala) / 2 - 2px);
+    height: calc(var(--escala) / 2);;
+    width: 3px;
+    transform-origin: center bottom;
+    background-color: rgb(0, 0, 0);
+    z-index: 1;
+    border-radius: 2px;
+}
+
+.opcion{
+    position: absolute;
+    width:var(--escala );
+    height: var(--escala);
+}
+
+#apuesta{
+    text-align: center;
+    margin: 40px;
+    z-index: 1;
+
+}
+
+#resultado{
+    text-align: center;
+    margin: 40px;
+    z-index: 1;
+}
+
+.girar{
+    animation-name: girar;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.1, 0, 0.18, 0.99);
+
+}
+
+@keyframes girar {
+    100%{
+        transform: rotate(var(--giroRuleta));
+    }
+}
+/*Fin de la Ruleta*/
+
+.bgAdivina{
+    background: rgb(173,255,225);
+    background: radial-gradient(circle, rgba(173,255,225,1) 0%, rgba(113,172,230,1) 100%);
+}
+
+.categorias{
+    display: grid;
+    grid-template-columns: auto;
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+}
+
+
+.descripcion{
+    text-align: center;
+    height: auto;
+    width: 100%;
+    
+}
+#descripcion{
+    margin-top: 40px;
+    padding: 50px;
+    text-align: center;
+    height: auto;
+    width: 100%;
+    font-size: 20px;
+}
+
+#resultado{
+    text-align: center;
+    font-size: 20px;
+}
+
+/*Fin  de Adivina el personaje*/
+
+.cuelpo{
+    background-image: url(/images/bg\ wood.jpg);
+    
+}
+#menus{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    height: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+}
+
+.mnu1, .mnu2{
+    display: grid;
+    grid-template-columns: auto;
+    padding: auto;
+    margin-top: 10%;
+    width: 60%;
+    height: auto;
+    font-size: 20px;
+    border: 10px solid rgb(94, 40, 21);
+    background: rgb(255,195,126);
+    background: linear-gradient(0deg, rgba(255,195,126,1) 0%, rgba(255,216,148,1) 30%, rgba(255,216,148,1) 70%, rgba(255,195,126,1) 100%);
+    border-radius: 5px;
+}
+p{
+    text-align: center;
+    
+}
+
+/*Seccion de los juegos*/
+}
+
+
+
+
+
+
+

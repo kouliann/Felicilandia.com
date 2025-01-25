@@ -1,16 +1,15 @@
 'user strict';
-// Get all images
+
 var imgs = document.querySelectorAll('.myImg');
 
-// Iterate through all images
 imgs.forEach(function (img) {
     img.onclick = function(){
-        // Find the closest modal parent element
+
         var modal = this.nextElementSibling;
         var modalImg = modal.querySelector(".modal-content");
         var captionText = modal.querySelector(".caption");
 
-        // Display the modal and update its content
+
         modal.style.display = "block";
         modalImg.src = this.src;
         captionText.innerHTML = this.alt;
@@ -23,8 +22,13 @@ imgs.forEach(function (img) {
     }
 });
 
-/* Variables y objetos*/
 
+//Para poder hacer esto necesitamos guardar los datos de la pagina en algun lugar, pensamos en el local storage pero son datos medianamente delicados y no es lo mejor, llegamos a la conclusion de que necesitamos una base de datos y no todavia no llegamos alla jejej
+//lo comento en vez de borrarlo para que al menos vea que lo intente ^^
+//lo mismo con las donaciones, se necesita guardar y mostrar y no queremos usar el local storage por lo inseguro que es.
+
+/* Variables y objetos*/
+/*
 const dibujos=[
     {id: 1, nombre: ' Ocaso en el fin del mundo' },
     {id: 2, nombre: ' Edward y Alphonse'},
@@ -82,7 +86,7 @@ const pintu=pinturas.map(function(pinturas){
     return `Id: ${pinturas.id}. Nombre:${pinturas.nombre} \n`
 })
 
-/*Fin*/
+*Fin*
 
 function calificardibujos() {
     if (confirm("Presiona aceptar para votar por tu obra favorita!")){
@@ -140,7 +144,10 @@ function calificarpinturas() {
        alert(`¡Gracias por tu voto!, el autor lo agradecera muchisimo <3`);
 
     }
-}
+}*/
+
+
+
 
 
 var form = document.querySelector("#formulario");

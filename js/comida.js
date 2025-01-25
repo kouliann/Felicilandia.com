@@ -1,5 +1,5 @@
 'use strict'
-document.getElementById("submit").addEventListener("click", () => platillo(plato, aderezo))
+document.getElementById("submit").addEventListener("click", () => mostrarPlatillo(plato, aderezo))
     
     const opcion1 =[ "Frijoles Corazon", "Pan de cueva", "Fruta extraña", "Cheddar extremadamente afilado", "Gamba"];
     const opcion2 =["Marinara Rica", "Crema de Setas", "Strope de Cereza", "Ajo picante", "Salsa incodamente caliente"];
@@ -32,22 +32,11 @@ document.getElementById("submit").addEventListener("click", () => platillo(plato
         console.log(aderezo);
    })
 
-   
-
-   function platillo(plato, aderezo){
-    var C=0;
-    console.log(plato, aderezo)
-    for(let i = 0; opcion1.length; i++){
-        for(let j = 0; opcion2.length; j++){
-            if(plato==i && aderezo==j){
-                console.log(comidas[C]);
-            }else{
-                C++;
-            }
-        }  
-    }
-    C=0;
-   }
+// Función para mostrar el platillo
+    function mostrarPlatillo(plato, aderezo) {
+    const indiceComida = plato * opcion2.length + aderezo;
+    document.getElementById("platillo").textContent = comidas[indiceComida];
+}
    
 
 

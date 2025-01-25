@@ -110,33 +110,27 @@ footer li{
     margin-top: 100px;
     display: grid;
     grid-template-columns: auto auto;
-    width: 40%;
+    width: 35%;
     height: auto;
-    border-radius: 10px;
     
 }
 
-#ids, #tiendas,  #precio, #stock{
+#ids, #tiendas, #productos, #precio, #stock{
 
     list-style: none;
     padding: 40px;
     width:100%;
     height: auto;
-    text-align: center;
+    font-size: 22px;
     
 }
-#productos{
-    list-style: none;
-    padding: 40px;
-    width:350px;
-    height: auto;
-    text-align: center;
-}
+
 #ver{
     align-items:center ;
     align-content: center;
     text-align: center;
     margin-top: 50px;
+    font-size: 24px;
 }
 
 .Htienda{
@@ -145,7 +139,6 @@ footer li{
     height: auto;
     text-align: center;
     padding: 40px;
-    border-radius:10px ;
     
 }
 
