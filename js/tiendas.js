@@ -336,17 +336,6 @@ const contenidoTiendas =[
         console.log('stock: '+contenidoTiendas[i].stock);
     }*/
 function construirMenu(){
-    
-    ulIds.innerHTML = "";
-    var ides = document.createElement('p');
-    ides.textContent = "ID: ";
-    ulIds.appendChild(ides);
-
-    for ( let i = 0; i< contenidoTiendas.length; i++){
-        var li = document.createElement('li');
-        li.textContent = contenidoTiendas[i].id;
-        ulIds.appendChild(li);
-    }
 
     ulTien.innerHTML = "";
     var nomTiend = document.createElement('p');
@@ -355,7 +344,7 @@ function construirMenu(){
 
     for ( let i = 0; i< contenidoTiendas.length; i++){
         var li = document.createElement('li');
-        li.textContent = contenidoTiendas[i].nombre;
+        li.textContent = contenidoTiendas[i].id+". "+contenidoTiendas[i].nombre;
         ulTien.appendChild(li);
     }
 }
@@ -386,32 +375,12 @@ var desicion = document.querySelector("#idT").value;
 
     ulProd.innerHTML="";
     var prou = document.createElement('p');
-    prou.textContent = "Productos Disponibles ";
+    prou.textContent = "Productos Disponibles, Precio, Stock";
     ulProd.appendChild(prou);
     for ( let i = 0; i< contenidoTiendas[desicion].producto.length; i++){
         var lProductos = document.createElement('li');
-        lProductos.textContent = i +"  "+ contenidoTiendas[desicion].producto[i];
+        lProductos.textContent = i +".  "+ contenidoTiendas[desicion].producto[i]+ ", "+ contenidoTiendas[desicion].precio[i]+", "+ contenidoTiendas[desicion].stock[i] ;
         ulProd.appendChild(lProductos);
-    }
-
-    ulPrec.innerHTML="";
-    var presi = document.createElement('p');
-    presi.textContent = "Precios";
-    ulPrec.appendChild(presi);
-    for ( let i = 0; i< contenidoTiendas[desicion].producto.length; i++){
-        var lPrecio = document.createElement('li');
-        lPrecio.textContent = contenidoTiendas[desicion].precio[i];
-        ulPrec.appendChild(lPrecio);
-    }
-    
-    ulStock.innerHTML="";
-    var sto = document.createElement('p');
-    sto.textContent = "Cantidad en Stock";
-    ulStock.appendChild(sto);
-    for ( let i = 0; i< contenidoTiendas[desicion].producto.length; i++){
-        var lStock = document.createElement('li');
-        lStock.textContent = contenidoTiendas[desicion].stock[i];
-        ulStock.appendChild(lStock);
     }
     
 })

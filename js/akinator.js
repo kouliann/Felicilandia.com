@@ -165,7 +165,7 @@ window.addEventListener('load', function(){
                     }else{
                         resultado.innerHTML="";
                         var resul= document.createElement('p');
-                        resul.textContent = "que mala suerte...El cantante era: "+actores[numRan].personaje;
+                        resul.textContent = "que mala suerte...El actor o la actriz era: "+actores[numRan].personaje;
                         resultado.appendChild(resul);
                     }
                 }
@@ -203,7 +203,7 @@ window.addEventListener('load', function(){
                     if (respuesta!==ficticios[numRan].personaje){
                         resultado.innerHTML="";
                         var resul= document.createElement('p');
-                        resul.textContent = "que mala suerte...El cantante era: "+ficticios[numRan].personaje;
+                        resul.textContent = "que mala suerte...El personaje era: "+ficticios[numRan].personaje;
                         resultado.appendChild(resul);
                     }
             })

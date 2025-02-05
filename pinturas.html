@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pinturas</title>
     <link rel="stylesheet" href="./css/expo.css">
+    <link rel="stylesheet" href="/css/Querys.css">
     <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="assets/bootstrap-5.3.3-dist/bootstrap-icons-1.11.3/font/bootstrap-icons.css">
@@ -11,34 +12,42 @@
 </head>
 <body>
     <!--Header-->
-
-  <header>
-    <nav class="fs-3 navbar navbar-expand-lg bg-body-tertiary navbar bg-dark border-bottom border-body" data-bs-theme="dark">
-        <div class="container-fluid ps-5">
-          <a class="navbar-brand fs-2" href="https://www.instagram.com/mamesinsulunga?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">MSL</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Unete</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-  </header>
+    <header>
+        <nav class="fs-3 navbar fixed-top bg-body-tertiary navbar-expand-lg navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+            <div class="container-fluid mx-auto">
+                <a class="navbar-brand px-5" >
+                    <img src="/images/coco.png" alt="coco" width="40" height="auto">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="Felicilandia.html">Inicio</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="info.html">Info</a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Unete</a>
+                  </li>
+                    
+                 
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </header>
   
   <section class="comienzo pin">
     <h1>Bienvenido a la <br> EXPOSICIÓN DE PINTURAS</h1>
 
   </section>
-
-  <section class="expo animate__animated animate__fadeInDown">
+<section class="fondoO py-5">
+    <section class="expo animate__animated animate__fadeInDown">
     <div class="obra">
       <div>
           <img class="myImg db1" src="./images/kois.png" alt="Nadar contra la corriente, como un pez Koi">
@@ -163,7 +172,7 @@
             <h3>Baile de Fantasia</h3>
             <p>Henry Alvarez - 10/05/2022</p>
             <i class="fa-brands fa-instagram"></i>
-            <p>@Whois.yebe</p>
+            <p>henvidv_v</p>
         </div>
     </div>
 
@@ -203,16 +212,20 @@
         </div>
     </div>
 
-     <a class="btn btn-outline-success btn-lg d-grid gap-2 col-6 mx-auto mt-5" href="expo.html" role="button">Salir</a>
+    
      <!--<button onclick="calificarpinturas()" class="btn btn-outline-success btn-lg d-grid gap-2 col-6 mx-auto mt-5">Puntuar</button>-->
+    </section>
+    <a class="btn btn-outline-success btn-lg d-grid col-6 mx-auto w-5" href="expo.html" role="button">Salir</a>
 </section>
 
 
 
 
 <footer>
-    <section>
-           <a href="https://www.instagram.com/mamesinsulunga?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa-brands fa-instagram icon"> MSL</i></a>
+    <section >
+        <a  href="https://www.instagram.com/mamesinsulunga?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+            <img src="/images/LOGO (1).png" alt="desarrolladores" class="msl" >
+        </a>
            
     </section>
 
@@ -220,7 +233,7 @@
         <ul class="listas link-offset-2 link-underline link-underline-opacity-0">
             <h2>Actividades</h2>
             <li><a href="juego.html">Juegos</a></li>
-            <li><a href="tiendas.html">Tiendas</a</li>
+            <li><a href="tiendas.html">Tiendas</a></li>
             <li><a href="expo.html">Exposicion de Arte</a></li>
         </ul>
     </section>
@@ -246,7 +259,6 @@
         </ul>
     </section>
 </footer>
-  
 
 <script src="assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script> 
 <script type="text/javascript" src="./js/expo.js"></script>

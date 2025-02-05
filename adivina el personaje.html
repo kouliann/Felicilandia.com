@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>adivina el personaje</title>
     <link rel="stylesheet" href="/css/juegos.css">
+    <link rel="stylesheet" href="/css/Querys.css">
     <script src="/js/akinator.js" defer></script> 
     <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
@@ -12,96 +13,106 @@
 </head>
 <body>
 
-    <header>
-        <nav class="fs-3 navbar navbar-expand-lg bg-body-tertiary navbar bg-dark border-bottom border-body" data-bs-theme="dark">
-            <div class="container-fluid ps-5">
-              <a class="navbar-brand fs-2" href="https://www.instagram.com/mamesinsulunga?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">MSL</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Unete</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-      </header>
-<section class="bgAdivina b">
-  <section class="p-5">
-      <section class="mx-5 fs-1">
+
+  <header>
+    <nav class="fs-3 navbar fixed-top bg-body-tertiary navbar-expand-lg navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid mx-auto">
+            <a class="navbar-brand px-5" >
+                <img src="/images/coco.png" alt="coco" width="40" height="auto">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Felicilandia.html">Inicio</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="info.html">Info</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Unete</a>
+              </li>
+                
+             
+            </ul>
+          </div>
+        </div>
+    </nav>
+</header>
+<section class="bgAdivina d-flex justify-content-center">
+  <section class="pt-5 p-2 ">
+      <section class="m-5 pt-5 fs-1">
             <p>ADIVINA LA CELEBRIDAD</p>
       </section>
             
-      <section class=" categorias col-3 mx-auto mt-5 ">
+      <section class="categorias d-grid col-auto mt-5 ">
 
             <button id="cantantes" type="button" class="btn btn-outline-success btn-lg m-2" >Cantantes</button>
             <button id="actores" type="button" class="btn btn-outline-success btn-lg  m-2" >Actores y Actrices</button>
             <button id="ficticios" type="button" class="btn btn-outline-success btn-lg  m-2" >Personajes ficticios</button>
-            
-
-            
       </section>
 
-      <section class="mt-5 mx-auto col-3 descripcion border border-success rounded-4">
-        <p class="mt-3">DESCRIPCION DEL PERSONAJE</p>
+
+      <section class="pt-5 descripcion border border-success rounded-4">
+        <p>DESCRIPCION DEL PERSONAJE</p>
         <p id="descripcion"></p>
         
       </section>
-      <section class="mx-auto col-3 descripcion mt-5">
+      <section class="descripcion mt-5">
         <p>IMPORTANTE: Debes colocar el primero el nombre y despues el apellido / característica tal cual se escribe, respetando las mayúsculas del nombre propio. Ej: Finn El Humano, Finneas O'Connell, Kayleen McAdams, y asi </p>
             <form action="#" method="post" id="resp" onsubmit="return false" class="col-4 mx-auto">
               <input type="text" id="respuesta" class="form-control">
               <span id="error_respuesta"></span>
-              <input type="submit" value="Enviar" id="submit" class="btn btn-outline-success col-auto mt-3">
+              <input type="submit" value="Enviar" id="submit" class="btn btn-outline-success col-auto mt-3 mx-auto my-5">
             </form>
               <p id="resultado" class="p-3 border border-success rounded-4 "></p>
       </section>
 
-      <a class="col-1 mx-auto mt-5 mb-5 btn btn-outline-success d-grid gap-2 " href="juego.html" role="button">Salir</a>
+      <a class="col-1 mx-auto mt-5 mb-5 btn btn-outline-success d-flex justify-content-center col-6 " href="juego.html" role="button">Salir</a>
 </section>
 </section>
-    <footer>
-        <section>
-               <a href="https://www.instagram.com/mamesinsulunga?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa-brands fa-instagram icon"> MSL</i></a>
-               
-        </section>
-    
-        <section>
-            <ul class="listas link-offset-2 link-underline link-underline-opacity-0">
-                <h2>Actividades</h2>
-                <li><a href="juego.html">Juegos</a></li>
-                <li><a href="tiendas.html">Tiendas</a</li>
-                <li><a href="expo.html">Exposicion de Arte</a></li>
-            </ul>
-        </section>
-    
-        <section>
-            <ul class="listas">
-                <h2>Otros Proyectos Desarrollados</h2>
-                <li><a href="#">Museo Travelling</a></li>
-                <li><a href="#">Sistema de Cines</a></li>
-                <li><a href="#">Planta Nuclear</a></li>
-                <h2>Proyectos en colaboracion</h2>
-                <li><a href="#">Sistema Electoral</a></li>
-                <li><a href="#">Rizzoto's Boss</a></li>
-            </ul>
-        </section>
-    
-        <section>
-            <ul class="listas">
-                <h2>Contacto y ubicacion</h2>
-                <li><a href="mslgroup@gmail.com">Correo</a></li>
-                <li><a href="https://maps.app.goo.gl/uuJ5qs9qwVPjX6eZ8">Ubicacion</a></li>
-                <li><a href="https://wa.me/qr/IBFG45EXNOE4I1">Numero de contacto</a></li>
-            </ul>
-        </section>
-        </footer>
+<footer>
+  <section>
+      <a  href="https://www.instagram.com/mamesinsulunga?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+          <img src="/images/LOGO (1).png" alt="desarrolladores" class="msl" >
+      </a>
+         
+  </section>
+
+  <section>
+      <ul class="listas link-offset-2 link-underline link-underline-opacity-0">
+          <h2>Actividades</h2>
+          <li><a href="juego.html">Juegos</a></li>
+          <li><a href="tiendas.html">Tiendas</a></li>
+          <li><a href="expo.html">Exposicion de Arte</a></li>
+      </ul>
+  </section>
+
+  <section>
+      <ul class="listas">
+          <h2>Otros Proyectos Desarrollados</h2>
+          <li><a href="#">Museo Travelling</a></li>
+          <li><a href="#">Sistema de Cines</a></li>
+          <li><a href="#">Planta Nuclear</a></li>
+          <h2>Proyectos en colaboracion</h2>
+          <li><a href="#">Sistema Electoral</a></li>
+          <li><a href="#">Rizzoto's Boss</a></li>
+      </ul>
+  </section>
+
+  <section>
+      <ul class="listas">
+          <h2>Contacto y ubicacion</h2>
+          <li><a href="mslgroup@gmail.com">Correo</a></li>
+          <li><a href="https://maps.app.goo.gl/uuJ5qs9qwVPjX6eZ8">Ubicacion</a></li>
+          <li><a href="https://wa.me/qr/IBFG45EXNOE4I1">Numero de contacto</a></li>
+      </ul>
+  </section>
+</footer>
 
     
     
@@ -109,5 +120,5 @@
     
 </body>
 <script type="text/javascript" src="/js/akinator.js"></script>
-    <script type="text/javascript" src="assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script> 
+    <script type="text/javascript" src="/bootstrap-5.3.3-dist/js/bootstrap.js"></script> 
 </html>

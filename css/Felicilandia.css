@@ -9,9 +9,6 @@ body{
     margin: 0%;
     padding: 0%;
     line-height: 1.2;
-    font-family: "IM Fell DW Pica", serif;
-    font-weight: 400;
-    font-style: normal;
 }
 
 :root{
@@ -144,11 +141,10 @@ footer a:hover {
     font-size: 20px;
 }
 
-.icon{
-    color: var(--secundary-color);
-    font-size: 5em;
-    text-align: center;
-    padding-left: 32px;
+.msl{
+
+    width: 300px;
+    height: auto;
 }
 
 footer{
@@ -170,4 +166,40 @@ footer li{
 
 /* Fin de la `pagina principal*/
 
+
+.cards{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    gap: 10%;
+    margin: 10%;
+    padding: auto;
+}
+.item{
+    background-color: rgb(223, 239, 250);
+    width: 100%;
+    height: auto;
+    padding: 10%;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.item p{
+    margin: 30px;
+    text-shadow: #ffffff 1px 0 8px;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 18px;
+}
+
+.item h3{
+    text-shadow: #ffffff 1px 0 8px;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+}
 

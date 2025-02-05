@@ -9,6 +9,8 @@ let sorteando = false;
 const resultadoTexto = document.getElementById("resultadoTexto");
 const resApuesta = document.getElementById("resultado");
 
+var cantidadDoblada;
+
 const si={
     nombre: 'GANASTEEEE!!!¡!¡!',
     probabilidad: 12.5
@@ -38,7 +40,7 @@ window.addEventListener('load',function(){
         return false;
     }else{
         document.querySelector('#error_cantidad').style.display="none";
-        cantidadDoblada = cantidad*2;
+         cantidadDoblada = cantidad*2;
     }
     
 })
@@ -109,6 +111,8 @@ ruleta.addEventListener("animationend", ()=>{
     }else{
         resApuesta.textContent = 0;
     }
+
+    console.log(resApuesta)
 })
 
 ajustarRuleta();

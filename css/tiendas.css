@@ -5,8 +5,8 @@
     font-style: normal;
 }
 body{
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     line-height: 1.2;
     display: flex;
     flex-direction: column;
@@ -44,6 +44,18 @@ footer a:hover {
 
 }
 
+.listas{
+    list-style: none;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.msl{
+    width: 300px;
+    height: auto;
+}
+
 footer{
     display: grid; 
     align-content: center;
@@ -51,7 +63,6 @@ footer{
     gap: 10px;  
     padding: 10px;
     padding-top: 50px;
-    margin-top: 80px;
     background-color: var(--primary-color);
 }
 
@@ -60,32 +71,16 @@ footer li{
     padding: 10px;
 }
 
-.listas{
-    list-style: none;
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 20px;
-}
 
-.icon{
-    color: var(--secundary-color);
-    font-size: 5em;
-    text-align: center;
-    padding-left: 50px;
-}
 
 /*fin footer*/
 
 .comienzo{
     text-align: center;
     align-content: center;
-    gap: 10px;
-    padding: 200px;
-    width: 100%;
-    height: auto;
     font-size: 30px;
-    border: 2px var(--primary-color);
-    background-color: var(--pink);
+    margin-top: 10%;
+
 }
 
 .comienzo h1{
@@ -96,26 +91,17 @@ footer li{
     font-size: 70px;
 }
 
-.comienzo p{
-  text-shadow: #000 1px 0 8px;
-  color: #ffffff;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bolder;
-  font-size: 30px;
-}
 
 .menuTiendas{
     text-align: left;
     margin:auto ;
     margin-top: 100px;
-    display: grid;
-    grid-template-columns: auto auto;
-    width: 35%;
+    width: 40%;
     height: auto;
     
 }
 
-#ids, #tiendas, #productos, #precio, #stock{
+ #tiendas, #productos, #precio, #stock{
 
     list-style: none;
     padding: 40px;
@@ -135,19 +121,23 @@ footer li{
 
 .Htienda{
     margin: auto;
-    width: var(--largo);
+    width: 30%;
     height: auto;
     text-align: center;
-    padding: 40px;
+    padding: 20px;
     
 }
 
 .tienda{
-    text-align: left;
+    text-align: center;
     margin:auto ;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    width: var(--largo);
+    width: 30%;
     height: auto;
     font-size: 18px;
+}
+
+.fondo{
+    background: rgb(173,255,225);
+    background: radial-gradient(circle, rgba(173,255,225,1) 0%, rgba(113,172,230,1) 100%);
+    
 }

@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ruleta</title>
     <link rel="stylesheet" href="css/juegos.css">
+    <link rel="stylesheet" href="/css/Querys.css">
        <script src="js/ruleta.js" defer></script> 
        <script src="js/helpers.js"></script>
     <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/all.css">
@@ -15,41 +16,38 @@
 
 </head>
 <body>
-    <header>
-        <nav class="fs-3 navbar navbar-expand-lg bg-body-tertiary navbar bg-dark border-bottom border-body mb-5" data-bs-theme="dark">
-            <div class="container-fluid">
-              <a class="navbar-brand fs-2" href="https://www.instagram.com/mamesinsulunga?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">MSL</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Actividades
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Tiendas</a></li>
-                      <li><a class="dropdown-item" href="#">Juegos</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Exposicion de Arte</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Unete</a>
-                  </li>
-                    
-                </ul>
-              </div>
-            </div>
-        </nav>
-    </header>
 
+  <header>
+    <nav class="fs-3 navbar fixed-top bg-body-tertiary navbar-expand-lg navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid mx-auto">
+            <a class="navbar-brand px-5" >
+                <img src="/images/coco.png" alt="coco" width="40" height="auto">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Felicilandia.html">Inicio</a>
+              </li>
 
-<section class="mb-5 pb-5"><h1>Prueba tu suerte!</h1>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="info.html">Info</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Unete</a>
+              </li>
+                
+             
+            </ul>
+          </div>
+        </div>
+    </nav>
+</header>
+<section class="m-5 p-5">
+  <h1 class="pt-5 text-center">Prueba tu suerte!</h1>
 </section>    
 
 
@@ -79,46 +77,49 @@
       <p id="resultado">Tu premio es de:</p>
     </section>
 
-     <a class="btn btn-outline-success d-grid gap-2 col-1 mx-auto mt-5 mb-5" href="juego.html" role="button">Salir</a>
+     <a class="btn btn-outline-success d-flex justify-content-center col-6 mx-auto mt-5 mb-5" href="juego.html" role="button">Salir</a>
 
-    <footer>
-        <section>
-               <a href="https://www.instagram.com/mamesinsulunga?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa-brands fa-instagram icon"> MSL</i></a>
-               
-        </section>
-    
-        <section>
-            <ul class="listas link-offset-2 link-underline link-underline-opacity-0">
-                <h2>Actividades</h2>
-                <li><a href="juego.html">Juegos</a></li>
-                <li><a href="tiendas.html">Tiendas</a</li>
-                <li><a href="expo.html">Exposicion de Arte</a></li>
-            </ul>
-        </section>
-    
-        <section>
-            <ul class="listas">
-                <h2>Otros Proyectos Desarrollados</h2>
-                <li><a href="#">Museo Travelling</a></li>
-                <li><a href="#">Sistema de Cines</a></li>
-                <li><a href="#">Planta Nuclear</a></li>
-                <h2>Proyectos en colaboracion</h2>
-                <li><a href="#">Sistema Electoral</a></li>
-                <li><a href="#">Rizzoto's Boss</a></li>
-            </ul>
-        </section>
-    
-        <section>
-            <ul class="listas">
-                <h2>Contacto y ubicacion</h2>
-                <li><a href="mslgroup@gmail.com">Correo</a></li>
-                <li><a href="https://maps.app.goo.gl/uuJ5qs9qwVPjX6eZ8">Ubicacion</a></li>
-                <li><a href="https://wa.me/qr/IBFG45EXNOE4I1">Numero de contacto</a></li>
-            </ul>
-        </section>
-    </footer>
+ 
+     <footer>
+      <section>
+          <a  href="https://www.instagram.com/mamesinsulunga?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+              <img src="/images/LOGO (1).png" alt="desarrolladores" class="msl" >
+          </a>
+             
+      </section>
+  
+      <section>
+          <ul class="listas link-offset-2 link-underline link-underline-opacity-0">
+              <h2>Actividades</h2>
+              <li><a href="juego.html">Juegos</a></li>
+              <li><a href="tiendas.html">Tiendas</a></li>
+              <li><a href="expo.html">Exposicion de Arte</a></li>
+          </ul>
+      </section>
+  
+      <section>
+          <ul class="listas">
+              <h2>Otros Proyectos Desarrollados</h2>
+              <li><a href="#">Museo Travelling</a></li>
+              <li><a href="#">Sistema de Cines</a></li>
+              <li><a href="#">Planta Nuclear</a></li>
+              <h2>Proyectos en colaboracion</h2>
+              <li><a href="#">Sistema Electoral</a></li>
+              <li><a href="#">Rizzoto's Boss</a></li>
+          </ul>
+      </section>
+  
+      <section>
+          <ul class="listas">
+              <h2>Contacto y ubicacion</h2>
+              <li><a href="mslgroup@gmail.com">Correo</a></li>
+              <li><a href="https://maps.app.goo.gl/uuJ5qs9qwVPjX6eZ8">Ubicacion</a></li>
+              <li><a href="https://wa.me/qr/IBFG45EXNOE4I1">Numero de contacto</a></li>
+          </ul>
+      </section>
+  </footer>
       
     
-    <script src="assets/bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script> 
+    <script src="/bootstrap-5.3.3-dist/js/bootstrap.js"></script> 
     </body>
     </html>

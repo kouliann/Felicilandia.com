@@ -33,7 +33,7 @@ a{
     width: 100%;
     border: 2px var(--primary-color);
     background-image: url(/images/exp.jpg);
-
+    background-position: center;
 
 }
 
@@ -80,8 +80,11 @@ a{
     grid-template-columns: auto ;
     gap: 30px;
     padding: 10px;
-    margin: 100px;
     text-decoration: none;
+    margin-top: 5%;
+    width:60%;
+    margin-left:20% ;
+    margin-right: 20%;
 }
 
 
@@ -97,7 +100,14 @@ a{
     font-size: 18px;
 }
 
+
+.fondoO{
+      background-color: var(--peach);
+
+}
 .expo{
+
+
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     text-align: center;
@@ -106,7 +116,6 @@ a{
     height: auto;
     padding: 3%;
     padding-top: 5%;
-    background-color: var(--peach);
 
 }
 
@@ -225,25 +234,6 @@ a{
     
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-.icon{
-    color: var(--secundary-color);
-    font-size: 5em;
-    text-align: center;
-    padding-left: 50px;
-}
-
 a{
   text-decoration: none;
   color: rgb(0, 0, 0);
@@ -260,18 +250,30 @@ footer a:hover {
 
 }
 
+.listas{
+  list-style: none;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.msl{
+
+  width: 300px;
+  height: auto;
+}
+
 footer{
-    display: grid; 
-    align-content: center;
-    grid-template-columns: auto auto auto auto;
-    gap: 10px;  
-    padding: 20px;
-    padding-top: 50px;
-    background-color: var(--primary-color);
-    color: #f4f6f5;
+  display: grid; 
+  align-content: center;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;  
+  padding: 10px;
+  padding-top: 50px;
+  background-color: var(--primary-color);
 }
 
 footer li{
-    display: flex;
-    padding: 10px;
+  display: flex;
+  padding: 10px;
 }

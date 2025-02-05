@@ -5,6 +5,7 @@
         font-optical-sizing: auto;
         font-style: normal;
     }
+
     body{
         margin: 0%;
         padding: 0%;
@@ -60,6 +61,12 @@
         padding: 10px;
     }
 
+    .msl{
+
+        width: 300px;
+        height: auto;
+    }
+
     .listas{
         list-style: none;
         text-decoration: none;
@@ -67,28 +74,19 @@
         font-size: 20px;
     }
 
-    .icon{
-        color: var(--secundary-color);
-        font-size: 5em;
-        text-align: center;
-        padding-left: 32px;
-    }
-
     /*fin footer*/
 
     .comienzo{
-        text-align: center;
+        display: grid;
         align-content: center;
         gap: 10px;
-        padding: 200px;
+        padding: 10%;
         width: 100%;
-        height: auto;
-        font-size: 30px;
-        border: 2px var(--primary-color);
-        background-image: url(/images/hjkg.jpg);
+        height: 70%;
+        background-image: url(/images/juegoss.jpg);
+        text-align: center;
 
     }
-
     .comienzo h1{
         text-shadow: #000 1px 0 8px;
         color: #ffffff;
@@ -107,7 +105,7 @@
 
     .menujuegos{
         justify-content: center;
-        padding: 10%;
+        padding: 5%;
         width: 100%;
         height: auto;
         grid-template-columns: auto auto auto ;
@@ -317,11 +315,6 @@
 
     }
 
-    h1{
-        text-align: center;
-    user-select: none;
-    }
-
     #container{
         position: relative;
         display: flex;
@@ -433,6 +426,7 @@
     }
 /*Fin de la Ruleta*/
 
+/*Akinator*/
     .bgAdivina{
         background: rgb(173,255,225);
         background: radial-gradient(circle, rgba(173,255,225,1) 0%, rgba(113,172,230,1) 100%);
@@ -442,17 +436,24 @@
         display: grid;
         grid-template-columns: auto;
         margin-top: 30px;
-        width: 100%;
         height: auto;
+        width: 100%;
+        margin-left: 35%;
+        margin-right: 35%;
     }
 
 
     .descripcion{
+        justify-content: center;
         text-align: center;
+        width: 30%;
         height: auto;
-        width: 100%;
+        margin-top: 5%;
+        margin-right: 35%;
+        margin-left: 35%;
         
     }
+
     #descripcion{
         margin-top: 40px;
         padding: 50px;
@@ -467,36 +468,225 @@
         font-size: 20px;
     }
 
-    /*Fin  de Adivina el personaje*/
+/*Fin Akinator*/
 
     .cuelpo{
         background-image: url(/images/bg\ wood.jpg);
+        padding-top: 10%;
         
     }
     #menus{
-        display: grid;
-        grid-template-columns: auto auto;
+        display: flex;
+        flex-direction: column column;
         width: 100%;
         height: auto;
         padding-left: 10%;
         padding-right: 10%;
-        
+        gap: 5%;
+
     }
 
     .mnu1, .mnu2{
         display: grid;
         grid-template-columns: auto;
+        justify-content: center;
         padding: auto;
-        margin-top: 10%;
-        width: 60%;
+        width: 100%;
         height: auto;
         font-size: 20px;
         border: 10px solid rgb(94, 40, 21);
         background: rgb(255,195,126);
-background: linear-gradient(0deg, rgba(255,195,126,1) 0%, rgba(255,216,148,1) 30%, rgba(255,216,148,1) 70%, rgba(255,195,126,1) 100%);
-        border-radius: 5px;
+        background: linear-gradient(0deg, rgba(255,195,126,1) 0%, rgba(255,216,148,1) 30%, rgba(255,216,148,1) 70%, rgba(255,195,126,1) 100%);
+        border-radius: 10px;
     }
     p{
         text-align: center;
+        justify-content: center;
+    }
+    
+    .cuadro{
+        justify-content: center;
+        text-align: center;
+        padding: 2.5%;
+        width: 30%;
+        height: auto;
+        margin-left: 35%;
+        margin-right: 35%;
+        font-size: 20px;
+        border: 10px solid rgb(94, 40, 21);
+        background: rgb(255,195,126);
+        background: linear-gradient(0deg, rgba(255,195,126,1) 0%, rgba(255,216,148,1) 30%, rgba(255,216,148,1) 70%, rgba(255,195,126,1) 100%);
+        border-radius: 10px;
+    }
+    .foto{
+        width: 25%;
+        height: auto;
+    }
+
+
+    /*Fin chef*/
+    /*Ahorcado*/
+
+    .bgAhorcado{
+        background-color: var(--pink);
+        width: 100%;
+        justify-content: center;
         
     }
+
+    .contenedor{
+        margin-top: 50%;
+        width: 850px;
+        background-color:white;
+        display: flex;
+        align-items: flex-end;
+        gap: 70px;
+        padding: 60px 40px;
+        border-radius: 10px;
+        margin: 12%;
+    }
+
+    .hangman-box img{
+        max-width:270px ;
+
+    }
+
+    .hangman-box h1{
+        font-size: 1.45rem;
+        margin-top: 20px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .wordDisplay{
+        display: flex;
+        gap:5px;
+        list-style: none;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        padding-left: 0;
+    }
+
+    .wordDisplay .letra{
+        width: 28px;
+        font-size: 2rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom:40px ; 
+        border-bottom: 3px solid black;
+
+
+    }
+
+    .wordDisplay .letra .adivinada{
+        border-color: transparent;
+        margin: -40px 0 35px
+    }
+
+    .gameBox h4{
+        text-align: center;
+        font-size: 1.1rem;
+        font-weight: 500;
+        margin-bottom: 15px;
+
+    }
+
+    .gameBox h4 b {
+        font-weight: 600;
+    }
+
+    .gameBox .teclado{
+        display: flex;
+        gap: 5px;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 40px;
+        width: 100%;
+    }
+
+    :where(.gameModal, .teclado) button{
+         color: white;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor:pointer;
+        outline: none;
+        background: var(--pink);
+        border: none;
+        border-radius: 10px;
+        text-transform: uppercase;
+    }
+
+    .teclado button {
+       
+        width: auto;
+        padding: 7px;
+    }
+
+    .teclado button[disabled]{
+        opacity: 0.6;
+        pointer-events: none;
+    }
+
+    :where(.gameModal, .teclado) button:hover{
+        background-color: var(--secundary-color);
+    }
+
+    .gameModal{
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.6);
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity:0;
+        pointer-events: none;
+        z-index: 999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: opacity 0.4s ease;
+    }
+
+    .gameModal.show{
+        opacity: 1;
+        pointer-events: autos;
+    }
+
+    .gameModal .content{
+        background-color: white;
+        max-width: 420px;
+        width: 100%;
+        text-align: center;
+        border-radius: 10px;
+        padding: 30px;
+    
+    
+    
+    }
+    .gameModal img{
+        max-width: 130px;
+        margin-bottom: 20px;
+    }
+
+    .gameModal h4{
+        font-size: 1.53rem;
+    }
+
+    .gameModal p {
+        font-size: 1.15rem;
+        margin: 15px 0 30px;
+        font-weight: 500;
+    }
+
+    .gameModal p b{
+        color:  var(--secundary-color);
+        font-weight: 600;
+    }
+
+    .gameModal button{
+        padding: 12px 23px ;
+    }
+
